@@ -8,3 +8,12 @@ SELECT CountryName AS [Country Name],
       ORDER BY IsoCode
 
 /*Mix of Peak and River Names*/
+SELECT PeakName,RiverName,
+     LOWER(PeakName + SUBSTRING(RiverName,2,LEN(RiverName))) 
+	     AS  [Mixed]
+     FROM   Peaks,Rivers
+     WHERE  LEFT(RiverName,1) = RIGHT(PeakName,1)
+     ORDER BY [Mixed]
+
+
+

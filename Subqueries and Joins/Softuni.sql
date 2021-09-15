@@ -72,8 +72,29 @@ WHERE  e.EmployeeID = 24
 /*Employee Manager*/
 SELECT e.EmployeeID,e.FirstName,em.EmployeeID AS ManagerID,em.FirstName AS ManagerName
     FROM Employees AS e
-JOIN Employees AS em ON em.EmployeeID = e.ManagerID
+JOIN Employees  em ON em.EmployeeID = e.ManagerID
 WHERE e.ManagerID IN (3,7) 
  ORDER BY e.EmployeeID
 
 /*Employees Summary*/
+
+SELECT Top(50) e.EmployeeID, CONCAT_WS(' ', e.FirstName,e.LastName) AS EmployeeName, CONCAT_WS(' ',em.FirstName,em.LastName) AS ManagerName, d.Name AS DepartmentName 
+      FROM Employees e
+JOIN Employees em ON em.EmployeeID = e.ManagerID
+JOIN Departments d ON e.DepartmentID = d.DepartmentID
+ORDER BY e.EmployeeID
+/* by judje */
+SELECT Top(50) e.EmployeeID, e.FirstName + ' ' + e.LastName AS EmployeeName, em.FirstName + ' ' + em.LastName AS ManagerName, d.Name AS DepartmentName 
+      FROM Employees e
+JOIN Employees em ON em.EmployeeID = e.ManagerID
+JOIN Departments d ON e.DepartmentID = d.DepartmentID
+ORDER BY e.EmployeeID
+
+/*Min Average Salary*/
+SELECT Top(1)
+     (SELECT AVG(Salary)
+	       FROM Employees e
+		   WHERE e.DepartmentID = d.DepartmentID) AS MinAverageSalary
+    FROM Departments d
+	ORDER BY MinAverageSalary ASC
+

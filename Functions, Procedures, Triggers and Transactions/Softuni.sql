@@ -4,6 +4,7 @@ USE SoftUni
 
 CREATE PROCEDURE usp_GetEmployeesSalaryAbove35000 
  AS
+
  SELECT e.FirstName, e.LastName FROM Employees e
 
  WHERE e.Salary > 35000
@@ -124,3 +125,46 @@ CREATE  PROCEDURE usp_EmployeesBySalaryLevel (@SalaryLevel NVARCHAR(20))
 
 
   /* Delete Employees and Departments */
+  CREATE PROCEDURE usp_DeleteEmployeesFromDepartment (@departmentId INT)
+   AS
+   BEGIN
+   ALTER TABLE Departments
+ ALTER COLUMN ManagerID INT NULL
+  -- del all employee, whose take a part of Projects
+  DELETE FROM EmployeesProjects
+    WHERE EmployeeID IN(
+	                  SELECT EmployeeID 
+					       FROM Employees 
+						WHERE DepartmentID = @departmentId)
+-- Set manager id to have value null
+  UPDATE Employees
+     SET ManagerID = NULL
+	 WHERE EmployeeID IN(
+	                  SELECT EmployeeID
+					       FROM Employees
+						WHERE DepartmentID = @departmentId)
+-- all employees have managerid value null
+  UPDATE Employees
+     SET ManagerID = NULL
+	 WHERE ManagerID IN(
+	                  SELECT EmployeeID
+					       FROM Employees
+						WHERE DepartmentID = @departmentId)
+
+-- set manager id in deparments of null
+ UPDATE Departments
+   SET ManagerID = NULL
+    WHERE DepartmentID = @departmentId
+
+DELETE FROM Employees
+ WHERE DepartmentID = @departmentId
+
+ DELETE FROM Departments
+ WHERE DepartmentID = @departmentId
+
+ SELECT COUNT(*) FROM Employees WHERE DepartmentID = @departmentId
+ END
+
+ EXEC usp_DeleteEmployeesFromDepartment 2
+
+

@@ -35,7 +35,7 @@ RETURNS DECIMAL(18,4)
  AS
   BEGIN 
    DECLARE @result  DECIMAL(18,4)
-    SELECT @result  = @sum * (POWER((1+ @yearlyInterestRate),@theNumberOfYears))
+   SELECT @result  = @sum * (POWER((1+ @yearlyInterestRate),@theNumberOfYears))
 	
 	RETURN @result
  END
@@ -46,17 +46,19 @@ SELECT  dbo.ufn_CalculateFutureValue (1000, 0.1,5)
 
 /* Calculating Interest */
  
-CREATE PROCEDURE usp_CalculateFutureValueForAccount (@accountId INT,@yearlyInterestRate FLOAT = 0.1)
+CREATE OR ALTER PROCEDURE usp_CalculateFutureValueForAccount (@accountId INT,@yearlyInterestRate FLOAT)
  AS 
   BEGIN 
      SELECT
+	   a.Id,
 	   ah.FirstName, 
 	   ah.LastName, 
-	   a.Balance, 
-	   dbo.ufn_CalculateFutureValue(a.Balance,@yearlyInterestRate,5)
-	       FROM Accounts a
-	  LEFT JOIN AccountHolders ah ON ah.Id = a.AccountHolderId
+	   a.Balance,
+	    dbo.ufn_CalculateFutureValue (a.Balance,@yearlyInterestRate,5)
+	       FROM AccountHolders ah
+	   JOIN Accounts a ON ah.Id = a.AccountHolderId
 	  WHERE a.Id = @accountId
   END
 
   EXECUTE usp_CalculateFutureValueForAccount @accountId = 1, @yearlyInterestRate = 0.1
+

@@ -29,3 +29,34 @@ CREATE  PROCEDURE usp_GetHoldersFullName
 
  
 /* Future Value Function */
+
+CREATE  FUNCTION ufn_CalculateFutureValue (@sum DECIMAL(18,4), @yearlyInterestRate FLOAT, @theNumberOfYears DECIMAL(10,2))
+RETURNS DECIMAL(18,4)
+ AS
+  BEGIN 
+   DECLARE @result  DECIMAL(18,4)
+    SELECT @result  = @sum * (POWER((1+ @yearlyInterestRate),@theNumberOfYears))
+	
+	RETURN @result
+ END
+
+
+SELECT  dbo.ufn_CalculateFutureValue (1000, 0.1,5)
+
+
+/* Calculating Interest */
+ 
+CREATE PROCEDURE usp_CalculateFutureValueForAccount (@accountId INT,@yearlyInterestRate FLOAT = 0.1)
+ AS 
+  BEGIN 
+     SELECT
+	   ah.FirstName, 
+	   ah.LastName, 
+	   a.Balance, 
+	   dbo.ufn_CalculateFutureValue(a.Balance,@yearlyInterestRate,5)
+	       FROM Accounts a
+	  LEFT JOIN AccountHolders ah ON ah.Id = a.AccountHolderId
+	  WHERE a.Id = @accountId
+  END
+
+  EXECUTE usp_CalculateFutureValueForAccount @accountId = 1, @yearlyInterestRate = 0.1

@@ -61,3 +61,5 @@ UPDATE Minions
  WHERE Id = @id
 
  SELECT [Name], Age FROM Minions WHERE Id = @Id
+
+ EXEC ups_GetOlder 2

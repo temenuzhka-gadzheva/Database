@@ -1,0 +1,16 @@
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\bin\Debug\net5.0\AuthorProblem.exe
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\bin\Debug\net5.0\AuthorProblem.deps.json
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\bin\Debug\net5.0\AuthorProblem.runtimeconfig.json
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\bin\Debug\net5.0\AuthorProblem.runtimeconfig.dev.json
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\bin\Debug\net5.0\AuthorProblem.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\bin\Debug\net5.0\ref\AuthorProblem.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\bin\Debug\net5.0\AuthorProblem.pdb
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\obj\Debug\net5.0\AuthorProblem.csproj.AssemblyReference.cache
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\obj\Debug\net5.0\AuthorProblem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\obj\Debug\net5.0\AuthorProblem.AssemblyInfoInputs.cache
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\obj\Debug\net5.0\AuthorProblem.AssemblyInfo.cs
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\obj\Debug\net5.0\AuthorProblem.csproj.CoreCompileInputs.cache
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\obj\Debug\net5.0\AuthorProblem.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\obj\Debug\net5.0\ref\AuthorProblem.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\obj\Debug\net5.0\AuthorProblem.pdb
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\AuthorProblem\obj\Debug\net5.0\AuthorProblem.genruntimeconfig.cache

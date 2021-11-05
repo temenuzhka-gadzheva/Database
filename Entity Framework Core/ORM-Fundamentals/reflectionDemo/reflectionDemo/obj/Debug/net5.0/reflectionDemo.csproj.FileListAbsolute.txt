@@ -1,0 +1,16 @@
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\bin\Debug\net5.0\reflectionDemo.exe
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\bin\Debug\net5.0\reflectionDemo.deps.json
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\bin\Debug\net5.0\reflectionDemo.runtimeconfig.json
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\bin\Debug\net5.0\reflectionDemo.runtimeconfig.dev.json
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\bin\Debug\net5.0\reflectionDemo.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\bin\Debug\net5.0\ref\reflectionDemo.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\bin\Debug\net5.0\reflectionDemo.pdb
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\obj\Debug\net5.0\reflectionDemo.csproj.AssemblyReference.cache
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\obj\Debug\net5.0\reflectionDemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\obj\Debug\net5.0\reflectionDemo.AssemblyInfoInputs.cache
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\obj\Debug\net5.0\reflectionDemo.AssemblyInfo.cs
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\obj\Debug\net5.0\reflectionDemo.csproj.CoreCompileInputs.cache
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\obj\Debug\net5.0\reflectionDemo.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\obj\Debug\net5.0\ref\reflectionDemo.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\obj\Debug\net5.0\reflectionDemo.pdb
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\reflectionDemo\obj\Debug\net5.0\reflectionDemo.genruntimeconfig.cache

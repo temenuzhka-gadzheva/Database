@@ -1,0 +1,16 @@
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\bin\Debug\net5.0\serilization.exe
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\bin\Debug\net5.0\serilization.deps.json
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\bin\Debug\net5.0\serilization.runtimeconfig.json
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\bin\Debug\net5.0\serilization.runtimeconfig.dev.json
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\bin\Debug\net5.0\serilization.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\bin\Debug\net5.0\ref\serilization.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\bin\Debug\net5.0\serilization.pdb
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\obj\Debug\net5.0\serilization.csproj.AssemblyReference.cache
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\obj\Debug\net5.0\serilization.GeneratedMSBuildEditorConfig.editorconfig
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\obj\Debug\net5.0\serilization.AssemblyInfoInputs.cache
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\obj\Debug\net5.0\serilization.AssemblyInfo.cs
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\obj\Debug\net5.0\serilization.csproj.CoreCompileInputs.cache
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\obj\Debug\net5.0\serilization.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\obj\Debug\net5.0\ref\serilization.dll
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\obj\Debug\net5.0\serilization.pdb
+D:\Database\Entity Framework Core\ORM-Fundamentals\reflectionDemo\serilization\obj\Debug\net5.0\serilization.genruntimeconfig.cache

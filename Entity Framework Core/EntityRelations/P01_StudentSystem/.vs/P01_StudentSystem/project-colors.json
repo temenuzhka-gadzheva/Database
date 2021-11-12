@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9d943b88-a9db-49a5-b930-d629708c59b2": {
+      "ProjectGuid": "9d943b88-a9db-49a5-b930-d629708c59b2",
+      "DisplayName": "P01_StudentSystem",
+      "ColorIndex": 0
+    },
+    "c2d3811a-98a8-4d15-bcd5-1194ea13e89b": {
+      "ProjectGuid": "c2d3811a-98a8-4d15-bcd5-1194ea13e89b",
+      "DisplayName": "P03_FootballBetting",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

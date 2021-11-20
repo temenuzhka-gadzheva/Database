@@ -20,24 +20,24 @@
 
         public static string ExportAlbumsInfo(MusicHubDbContext context, int producerId)
         {
-            var albums = context.Albums
-                .Where(x => x.ProducerId == producerId)
-                .Select(x => new
-                {
-                    Name = x.Name,
-                    ReleaseDate = x.ReleaseDate,
-                    ProducerName = x.Producer.Name,
-                    AlbumSongs = new
-                    {
-                        SongName = x.Songs.OrderByDescending(x => x.Name),
-                        Price = x.Price,
-                        WriterName = x.Songs
-                    }
-                }) ;
+            /*  var albums = context.Albums
+                  .Where(x => x.ProducerId == producerId)
+                  .Select(x => new
+                  {
+                      Name = x.Name,
+                      ReleaseDate = x.ReleaseDate,
+                      ProducerName = x.Producer.Name,
+                      AlbumSongs = new
+                      {
+                          SongName = x.Songs.OrderByDescending(x => x.Name),
+                          Price = x.Price,
+                          WriterName = x.Songs
+                      }
+                  }) ;
 
-            return albums.ToString();
+              return albums.ToString();*/
+            throw new NotImplementedException();
 
-           
         }
 
         public static string ExportSongsAboveDuration(MusicHubDbContext context, int duration)

@@ -20,7 +20,7 @@
         public DbSet<Performer> Performers { get; set; }
         public DbSet<Producer> Producers { get; set; }
         public DbSet<Song> Songs { get; set; }
-        public DbSet<SongPerformer> SongPerformers { get; set; }
+        public DbSet<SongPerformer> SongsPerformers { get; set; }
         public DbSet<Writer> Writers { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -36,14 +36,7 @@
             builder.Entity<SongPerformer>(x =>
             {
                 x.HasKey(x => new { x.PerformerId, x.SongId});
-            });
-
-            builder.Entity<Song>()
-                   .Property(x => x.Genre)
-                   .HasConversion
-                   (
-                x => x.ToString(),
-                x => (Genre)Enum.Parse(typeof(Genre), x));                
+            });           
             
             base.OnModelCreating(builder);
         }

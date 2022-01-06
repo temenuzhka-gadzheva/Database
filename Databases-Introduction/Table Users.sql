@@ -23,7 +23,7 @@ VALUES
 
 /*Change primary key and create from to or more colums one unique key*/
   ALTER TABLE Users
-  DROP CONSTRAINT PK__Users__3214EC0744F1C0EF
+  DROP CONSTRAINT PK__Users__3214EC07391CDFD8
 
   ALTER TABLE Users
   ADD CONSTRAINT PK_IdUsername PRIMARY KEY (Id,Username) 

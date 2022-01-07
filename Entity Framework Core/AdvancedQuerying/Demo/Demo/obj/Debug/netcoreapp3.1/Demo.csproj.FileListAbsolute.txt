@@ -12,8 +12,6 @@ D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\obj\Debug\netcoreap
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.pdb
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.genruntimeconfig.cache
-D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -22,9 +20,6 @@ D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreap
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
@@ -56,3 +51,10 @@ D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreap
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Database\Entity Framework Core\AdvancedQuerying\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll

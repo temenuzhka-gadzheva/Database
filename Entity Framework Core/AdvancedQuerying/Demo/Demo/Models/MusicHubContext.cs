@@ -27,12 +27,19 @@ namespace Demo.Models
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseSqlServer("Server=.;Integrated Security=true;Database=MusicHub");
+                optionsBuilder
+                    .  UseLazyLoadingProxies()
+                    .UseSqlServer("Server=.;Integrated Security=true;Database=MusicHub");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+           /* modelBuilder.Entity<Songs>()
+                .HasMany(x => x.SongsPerformers)
+                .WithOne(x => x.Song)
+                .OnDelete(DeleteBehavior.Cascade);*/
+
             modelBuilder.Entity<Albums>(entity =>
             {
                 entity.HasIndex(e => e.ProducerId);

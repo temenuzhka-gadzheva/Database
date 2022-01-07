@@ -23,6 +23,7 @@ namespace Demo.Models
         public int? AlbumId { get; set; }
         public int WriterId { get; set; }
         [Column(TypeName = "decimal(18, 2)")]
+        [ConcurrencyCheck]
         public decimal Price { get; set; }
 
         [ForeignKey(nameof(AlbumId))]

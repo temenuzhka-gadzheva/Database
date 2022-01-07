@@ -6,7 +6,7 @@ using Z.EntityFramework.Plus;
 
 namespace Demo
 {
-    class Projection 
+    class Projection
     {
         public string Name { get; set; }
         public DateTime CreatedOn { get; set; }
@@ -118,9 +118,120 @@ namespace Demo
 
             // by update 
 
-          /* db.Songs.Where(x => x.Id <= 10)
-                .Update(oldSong => new Songs { WriterId = oldSong.Id});*/
+            /* db.Songs.Where(x => x.Id <= 10)
+                  .Update(oldSong => new Songs { WriterId = oldSong.Id});*/
+
+            // explicit loading
+            /*   var songs = db.Songs.Where(x => x.Id <= 10).ToList();
+
+               foreach (var song in songs)
+               {
+                   Console.WriteLine(song.Name);
+
+                   db.Entry(song).Collection(x => x.SongsPerformers).Load();
+                   Console.WriteLine(song.SongsPerformers.Count());
+
+                   db.Entry(song).Reference(x => x.Writer).Load();
+                   Console.WriteLine(song.Writer.Name);
+               }*/
+
+            // eager loading
+            /* var songs = db.Songs
+                 .Include(x => x.Writer)
+                 .Include(x => x.SongsPerformers)
+                 .Where(x => x.Id <= 10)
+                 .ToList();
+
+             foreach (var song in songs)
+             {
+                 Console.WriteLine(song.Name);
+                 Console.WriteLine(song.SongsPerformers.Count());
+                 Console.WriteLine(song.Writer.Name);
+             }
+            */
+
+            // lazy loading
+            /* var songs = db.Songs.Where(x => x.Id <= 10).ToList();
+
+             foreach (var song in songs)
+             {
+                 Console.WriteLine(song.Name);
+                 Console.WriteLine(song.SongsPerformers.Count());
+                 Console.WriteLine(song.Writer.Name);
+             }*/
+
+
+            // this problem received by lazy loading
+            // desicion of N+1 Problem 
+
+            /*  var songs = db.Songs
+                  .Where(x => x.Id <= 10)
+                  .Select(x => new
+                  { 
+                      x.Name,
+                      SongPerformer = x.SongsPerformers.Count(),
+                      Writer = x.Writer.Name 
+                  })
+                  .ToList();
+
+              foreach (var song in songs)
+              {
+                  Console.WriteLine(song.Name);
+                  Console.WriteLine(song.SongPerformer);
+                  Console.WriteLine(song.Writer);
+              }*/
+
+            // concurrency problems 
+
+            /*    var db1 = new MusicHubContext();
+                var song1 = db1.Songs.FirstOrDefault(x => x.Id == 1);
+                var db2 = new MusicHubContext();
+                var song2= db1.Songs.FirstOrDefault(x => x.Id == 1);
+
+                song1.Price += 1000;
+                song2.Price += 1000;
+
+                db1.SaveChanges();
+                db2.SaveChanges();*/
+
+            // song loose money 
+            // decision of problem 
+            // 1. UPDATE Songs  SET Price  =  Price  + 1000 WHERE Id = 1 
+            // 2. add of changed property attribute [ConcurrencyCheck] and verify if some is change this property and save changes 
+
+            // money are correct
+            /* var db1 = new MusicHubContext();
+             var song1 = db1.Songs.FirstOrDefault(x => x.Id == 1);
+             var db2 = new MusicHubContext();
+             var song2 = db1.Songs.FirstOrDefault(x => x.Id == 1);
+
+             song1.Price += 1000;
+
+
+             db1.SaveChanges();
+
+             while (true)
+             {
+                 try
+                 {
+                     song2.Price += 1000;
+                     db2.SaveChanges();
+                     break;
+                 }
+                 catch
+                 {
+                     db2 = new MusicHubContext();
+                     song2 = db1.Songs.FirstOrDefault(x => x.Id == 1);
+                 }
+             }*/
+
+            // cascade delete
+            var song = db.Songs.Find(29);
+            db.Songs.Remove(song);
+            db.SaveChanges();
 
         }
+
     }
 }
+ 

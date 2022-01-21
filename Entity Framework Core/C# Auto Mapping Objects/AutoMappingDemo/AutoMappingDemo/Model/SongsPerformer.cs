@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AutoMappingDemo.Model
 {
-    public partial class SongsPerformers
+    public partial class SongsPerformer
     {
         [Key]
         public int SongId { get; set; }
@@ -13,10 +13,10 @@ namespace AutoMappingDemo.Model
         public int PerformerId { get; set; }
 
         [ForeignKey(nameof(PerformerId))]
-        [InverseProperty(nameof(Performers.SongsPerformers))]
-        public virtual Performers Performer { get; set; }
+        [InverseProperty(nameof(Model.Performer.SongsPerformers))]
+        public virtual Performer Performer { get; set; }
         [ForeignKey(nameof(SongId))]
-        [InverseProperty(nameof(Songs.SongsPerformers))]
-        public virtual Songs Song { get; set; }
+        [InverseProperty(nameof(Model.Song.SongsPerformers))]
+        public virtual Song Song { get; set; }
     }
 }

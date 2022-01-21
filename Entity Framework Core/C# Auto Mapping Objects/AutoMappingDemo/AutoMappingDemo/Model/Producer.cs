@@ -5,21 +5,22 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AutoMappingDemo.Model
 {
-    public partial class Writers
+    public partial class Producer
     {
-        public Writers()
+        public Producer()
         {
-            Songs = new HashSet<Songs>();
+            Albums = new HashSet<Album>();
         }
 
         [Key]
         public int Id { get; set; }
         [Required]
-        [StringLength(20)]
+        [StringLength(30)]
         public string Name { get; set; }
         public string Pseudonym { get; set; }
+        public string PhoneNumber { get; set; }
 
-        [InverseProperty("Writer")]
-        public virtual ICollection<Songs> Songs { get; set; }
+        [InverseProperty("Producer")]
+        public virtual ICollection<Album> Albums { get; set; }
     }
 }

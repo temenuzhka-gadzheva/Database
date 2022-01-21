@@ -5,11 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AutoMappingDemo.Model
 {
-    public partial class Albums
+    public partial class Album
     {
-        public Albums()
+        public Album()
         {
-            Songs = new HashSet<Songs>();
+            Songs = new HashSet<Song>();
         }
 
         [Key]
@@ -21,9 +21,9 @@ namespace AutoMappingDemo.Model
         public int? ProducerId { get; set; }
 
         [ForeignKey(nameof(ProducerId))]
-        [InverseProperty(nameof(Producers.Albums))]
-        public virtual Producers Producer { get; set; }
+        [InverseProperty(nameof(Model.Producer.Albums))]
+        public virtual Producer Producer { get; set; }
         [InverseProperty("Album")]
-        public virtual ICollection<Songs> Songs { get; set; }
+        public virtual ICollection<Song> Songs { get; set; }
     }
 }

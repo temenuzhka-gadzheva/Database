@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "71iaxC2jjtBwVquA0pJTR5ThYJmdxvcuCf336DQJRRYsjVxF1tUIiCl/135le9cgOj5uy53dd8hEq1DSx6y/qw==",
+  "dgSpecHash": "DQ+evn/BE22+mXJ5WYjCV3CPAsen4N2mnJneKmDWNXW7qhwA4QH7bZ5SE1gLIuK7/kb0FVGcmAfww+QDyof/KA==",
   "success": true,
   "projectFilePath": "D:\\Database\\Entity Framework Core\\C# Auto Mapping Objects\\AutoMappingDemo\\AutoMappingDemo\\AutoMappingDemo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -5,11 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AutoMappingDemo.Model
 {
-    public partial class Performers
+    public partial class Performer
     {
-        public Performers()
+        public Performer()
         {
-            SongsPerformers = new HashSet<SongsPerformers>();
+            SongsPerformers = new HashSet<SongsPerformer>();
         }
 
         [Key]
@@ -25,6 +25,6 @@ namespace AutoMappingDemo.Model
         public decimal NetWorth { get; set; }
 
         [InverseProperty("Performer")]
-        public virtual ICollection<SongsPerformers> SongsPerformers { get; set; }
+        public virtual ICollection<SongsPerformer> SongsPerformers { get; set; }
     }
 }

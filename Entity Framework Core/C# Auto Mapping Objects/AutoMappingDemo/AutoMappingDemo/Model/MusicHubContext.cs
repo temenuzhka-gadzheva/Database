@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace AutoMappingDemo.Model
 {
@@ -15,12 +13,12 @@ namespace AutoMappingDemo.Model
         {
         }
 
-        public virtual DbSet<Albums> Albums { get; set; }
-        public virtual DbSet<Performers> Performers { get; set; }
-        public virtual DbSet<Producers> Producers { get; set; }
-        public virtual DbSet<Songs> Songs { get; set; }
-        public virtual DbSet<SongsPerformers> SongsPerformers { get; set; }
-        public virtual DbSet<Writers> Writers { get; set; }
+        public virtual DbSet<Album> Albums { get; set; }
+        public virtual DbSet<Performer> Performers { get; set; }
+        public virtual DbSet<Producer> Producers { get; set; }
+        public virtual DbSet<Song> Songs { get; set; }
+        public virtual DbSet<SongsPerformer> SongsPerformers { get; set; }
+        public virtual DbSet<Writer> Writers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -32,19 +30,19 @@ namespace AutoMappingDemo.Model
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Albums>(entity =>
+            modelBuilder.Entity<Album>(entity =>
             {
                 entity.HasIndex(e => e.ProducerId);
             });
 
-            modelBuilder.Entity<Songs>(entity =>
+            modelBuilder.Entity<Song>(entity =>
             {
                 entity.HasIndex(e => e.AlbumId);
 
                 entity.HasIndex(e => e.WriterId);
             });
 
-            modelBuilder.Entity<SongsPerformers>(entity =>
+            modelBuilder.Entity<SongsPerformer>(entity =>
             {
                 entity.HasKey(e => new { e.PerformerId, e.SongId });
 

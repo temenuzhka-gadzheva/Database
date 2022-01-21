@@ -5,11 +5,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AutoMappingDemo.Model
 {
-    public partial class Songs
+    public partial class Song
     {
-        public Songs()
+        public Song()
         {
-            SongsPerformers = new HashSet<SongsPerformers>();
+            SongsPerformers = new HashSet<SongsPerformer>();
         }
 
         [Key]
@@ -28,12 +28,12 @@ namespace AutoMappingDemo.Model
        // public bool IsDeleted { get; set; }
 
         [ForeignKey(nameof(AlbumId))]
-        [InverseProperty(nameof(Albums.Songs))]
-        public virtual Albums Album { get; set; }
+        [InverseProperty(nameof(Model.Album.Songs))]
+        public virtual Album Album { get; set; }
         [ForeignKey(nameof(WriterId))]
-        [InverseProperty(nameof(Writers.Songs))]
-        public virtual Writers Writer { get; set; }
+        [InverseProperty(nameof(Model.Writer.Songs))]
+        public virtual Writer Writer { get; set; }
         [InverseProperty("Song")]
-        public virtual ICollection<SongsPerformers> SongsPerformers { get; set; }
+        public virtual ICollection<SongsPerformer> SongsPerformers { get; set; }
     }
 }

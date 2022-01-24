@@ -1,0 +1,10 @@
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.deps.json
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Models\bin\Debug\netcoreapp2.1\FastFood.Models.pdb
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csproj.AssemblyReference.cache
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfoInputs.cache
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.AssemblyInfo.cs
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.csproj.CoreCompileInputs.cache
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Models\obj\Debug\netcoreapp2.1\FastFood.Models.pdb

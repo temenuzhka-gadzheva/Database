@@ -1,0 +1,16 @@
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.deps.json
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.runtimeconfig.json
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.runtimeconfig.dev.json
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.pdb
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Models.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Models.pdb
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csproj.AssemblyReference.cache
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.AssemblyInfoInputs.cache
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.AssemblyInfo.cs
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csproj.CoreCompileInputs.cache
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csproj.CopyComplete
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.pdb
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.genruntimeconfig.cache

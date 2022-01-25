@@ -4,7 +4,9 @@
     using FastFood.Core.ViewModels.Categories;
     using FastFood.Core.ViewModels.Employees;
     using FastFood.Core.ViewModels.Items;
+    using FastFood.Core.ViewModels.Orders;
     using FastFood.Models;
+    using System;
     using ViewModels.Positions;
 
     public class FastFoodProfile : Profile
@@ -38,6 +40,16 @@
 
             this.CreateMap<Item, ItemsAllViewModels>()
                 .ForMember(x => x.Category, y => y.MapFrom(s => s.Category.Name));
+
+            // order
+            this.CreateMap<CreateOrderInputModel, Order>()
+                .ForMember(x => x.DateTime, y => y.MapFrom(s => DateTime.Now));
+                
+
+            this.CreateMap<Order, OrderAllViewModel>()
+                .ForMember(x => x.Employee, y => y.MapFrom(s => s.Employee.Name))
+                .ForMember(x => x.OrderId, y => y.MapFrom(s => s.Id))
+               .ForMember(x => x.DateTime, y => y.MapFrom(s => s.DateTime.ToString("d")));
         }
     }
 }

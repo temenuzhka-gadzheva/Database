@@ -3,7 +3,9 @@
     using System;
     using System.Linq;
     using AutoMapper;
+    using AutoMapper.QueryableExtensions;
     using Data;
+    using FastFood.Models;
     using Microsoft.AspNetCore.Mvc;
     using ViewModels.Orders;
 
@@ -20,6 +22,7 @@
 
         public IActionResult Create()
         {
+           
             var viewOrder = new CreateOrderViewModel
             {
                 Items = this.context.Items.Select(x => x.Id).ToList(),
@@ -31,13 +34,25 @@
 
         [HttpPost]
         public IActionResult Create(CreateOrderInputModel model)
-        { 
+        {
+            var order = this.mapper.Map<Order>(model);
+            order.OrderItems.Add(new OrderItem { ItemId = model.ItemId });
+            this.context.Orders.Add(order);
+
+            var orderItem = this.mapper.Map<OrderItem>(model);
+            order.OrderItems.Add(orderItem);
+
+            this.context.SaveChanges();
             return this.RedirectToAction("All", "Orders");
         }
 
         public IActionResult All()
         {
-            throw new NotImplementedException();
+            var allOrders = this.context.Orders
+                .ProjectTo<OrderAllViewModel>(this.mapper.ConfigurationProvider)
+                .ToList();
+
+            return this.View(allOrders);
         }
     }
 }

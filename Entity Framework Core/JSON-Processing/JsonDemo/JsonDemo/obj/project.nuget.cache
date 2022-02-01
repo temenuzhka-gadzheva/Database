@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2LZvEc6I0UcFhwv2ZeW4gVIcCqRe+76fIIOwCiYAJjVG07xXq+Tq+E5BHr4HeA7oXvxBJCd90fco5z1zd6NkSA==",
+  "dgSpecHash": "76pw0TET/Gptq7RtlLGPeeKVB3eczOop8f/gUYf6wWL8xlQhJ7EFjPqpO+IhWq17smVT/avRP1MZIFdF2AcUlQ==",
   "success": true,
   "projectFilePath": "D:\\Database\\Entity Framework Core\\JSON-Processing\\JsonDemo\\JsonDemo\\JsonDemo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",

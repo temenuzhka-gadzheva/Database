@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\attributesDemo\\attributesDemo.csproj": {}
+    "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\attributesDemo\\attributesDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\attributesDemo\\attributesDemo.csproj": {
+    "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\attributesDemo\\attributesDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\attributesDemo\\attributesDemo.csproj",
+        "projectUniqueName": "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\attributesDemo\\attributesDemo.csproj",
         "projectName": "attributesDemo",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\attributesDemo\\attributesDemo.csproj",
+        "projectPath": "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\attributesDemo\\attributesDemo.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\attributesDemo\\obj\\",
+        "outputPath": "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\attributesDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

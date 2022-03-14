@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DQ+evn/BE22+mXJ5WYjCV3CPAsen4N2mnJneKmDWNXW7qhwA4QH7bZ5SE1gLIuK7/kb0FVGcmAfww+QDyof/KA==",
+  "dgSpecHash": "fp2tVxisFtsWrRvFppyhPKq2Mba6H2ynAB5RflvqRloYTXBOFlpOQN6L/70gOlDmQ45S6gi2mS0sGJG216x5Tg==",
   "success": true,
   "projectFilePath": "D:\\Database\\Entity Framework Core\\C# Auto Mapping Objects\\AutoMappingDemo\\AutoMappingDemo\\AutoMappingDemo.csproj",
   "expectedPackageFiles": [

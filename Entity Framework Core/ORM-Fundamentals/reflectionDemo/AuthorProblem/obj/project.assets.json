@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\AuthorProblem\\AuthorProblem.csproj",
+      "projectUniqueName": "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\AuthorProblem\\AuthorProblem.csproj",
       "projectName": "AuthorProblem",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\AuthorProblem\\AuthorProblem.csproj",
+      "projectPath": "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\AuthorProblem\\AuthorProblem.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\AuthorProblem\\obj\\",
+      "outputPath": "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\AuthorProblem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -83,3 +83,11 @@ D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProj
 D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+D:\Database\Entity Framework Core\C# Auto Mapping Objects\AutoMappingObjectsProject- ExDemo\FastFood.Core\bin\Debug\netcoreapp3.1\System.Text.Json.dll

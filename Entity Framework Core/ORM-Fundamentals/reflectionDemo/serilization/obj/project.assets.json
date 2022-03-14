@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\serilization\\serilization.csproj",
+      "projectUniqueName": "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\serilization\\serilization.csproj",
       "projectName": "serilization",
-      "projectPath": "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\serilization\\serilization.csproj",
+      "projectPath": "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\serilization\\serilization.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\serilization\\obj\\",
+      "outputPath": "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\serilization\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -106,7 +106,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

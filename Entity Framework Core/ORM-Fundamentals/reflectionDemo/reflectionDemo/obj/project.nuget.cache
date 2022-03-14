@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fWB9RCZOId7RhSxWZtfhWtr8zRWJYTe7WhIxggMpePW8Yqof2C7n+YuWUJ87fQXkx1j5/Qz47y+oLLd1zwnLnw==",
+  "dgSpecHash": "FCXw+bW5WUSAfYouGR+QKsauQCzkABWtyav49vqNwq04rJt6ZDHPfqAwnzgI8oUPqFMimSgBQc0rhXKYmRr26A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\reflectionDemo\\reflectionDemo\\reflectionDemo.csproj",
+  "projectFilePath": "D:\\Database\\Entity Framework Core\\ORM-Fundamentals\\reflectionDemo\\reflectionDemo\\reflectionDemo.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

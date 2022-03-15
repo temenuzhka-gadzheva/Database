@@ -1,0 +1,13 @@
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\bin\Debug\netcoreapp2.1\CarDealer.deps.json
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\bin\Debug\netcoreapp2.1\CarDealer.runtimeconfig.json
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\bin\Debug\netcoreapp2.1\CarDealer.runtimeconfig.dev.json
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\bin\Debug\netcoreapp2.1\CarDealer.dll
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\bin\Debug\netcoreapp2.1\CarDealer.pdb
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\obj\Debug\netcoreapp2.1\CarDealer.csproj.AssemblyReference.cache
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\obj\Debug\netcoreapp2.1\CarDealer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\obj\Debug\netcoreapp2.1\CarDealer.AssemblyInfoInputs.cache
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\obj\Debug\netcoreapp2.1\CarDealer.AssemblyInfo.cs
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\obj\Debug\netcoreapp2.1\CarDealer.csproj.CoreCompileInputs.cache
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\obj\Debug\netcoreapp2.1\CarDealer.dll
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\obj\Debug\netcoreapp2.1\CarDealer.pdb
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-CarDealer\CarDealer\obj\Debug\netcoreapp2.1\CarDealer.genruntimeconfig.cache

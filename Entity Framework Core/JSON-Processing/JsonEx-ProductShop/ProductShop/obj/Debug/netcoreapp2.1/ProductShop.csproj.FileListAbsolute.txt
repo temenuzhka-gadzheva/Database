@@ -1,0 +1,13 @@
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.csproj.AssemblyReference.cache
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.GeneratedMSBuildEditorConfig.editorconfig
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.AssemblyInfoInputs.cache
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.AssemblyInfo.cs
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.csproj.CoreCompileInputs.cache
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\bin\Debug\netcoreapp2.1\ProductShop.deps.json
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\bin\Debug\netcoreapp2.1\ProductShop.runtimeconfig.json
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\bin\Debug\netcoreapp2.1\ProductShop.runtimeconfig.dev.json
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\bin\Debug\netcoreapp2.1\ProductShop.dll
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\bin\Debug\netcoreapp2.1\ProductShop.pdb
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.dll
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.pdb
+D:\Database\Entity Framework Core\JSON-Processing\JsonEx-ProductShop\ProductShop\obj\Debug\netcoreapp2.1\ProductShop.genruntimeconfig.cache

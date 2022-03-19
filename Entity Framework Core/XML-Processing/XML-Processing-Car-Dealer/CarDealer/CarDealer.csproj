@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DataTransferObjects\Output\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="StartUp.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>

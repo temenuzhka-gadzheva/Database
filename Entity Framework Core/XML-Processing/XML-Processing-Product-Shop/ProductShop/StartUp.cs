@@ -1,4 +1,6 @@
-﻿using ProductShop.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using ProductShop.Data;
 using ProductShop.DataTransferObjects.Input;
 using ProductShop.DataTransferObjects.Output;
 using ProductShop.Models;
@@ -30,7 +32,9 @@ namespace ProductShop
 
            // var result = GetProductsInRange(context);
            // var result = GetSoldProducts(context);
-            var result = GetCategoriesByProductsCount(context);
+           // var result = GetCategoriesByProductsCount(context);
+
+            var result = GetUsersWithProducts(context);
             Console.WriteLine(result);
         }
 
@@ -201,7 +205,56 @@ namespace ProductShop
         // export users and products
         public static string GetUsersWithProducts(ProductShopContext context)
         {
+            var usersProducts = context.Users
+                // for judje
+                .Include(x => x.ProductsSold)
+                .ToList()
+                .Where(x => x.ProductsSold.Any(b => b.BuyerId != null))
+                 .OrderByDescending(x => x.ProductsSold.Count())
+                 .Take(10)
+                .Select(u => new UsersInfoOutputModel
+                {
+                    FirstName = u.FirstName,
+                    LastName = u.LastName,
+                    Age = u.Age,
+                    SoldProducts = new SoldProductsOutputModel
+                    {
+                        Count = u.ProductsSold
+                               .Where(x => x.BuyerId != null).Count(),
+                        Products = u.ProductsSold
+                        .Where(x => x.BuyerId != null)
+                        .Select(p => new SoldProductOutputModel
+                        {
+                            Name = p.Name,
+                            Price = p.Price
+                        })
+                        .OrderByDescending(p => p.Price)
+                        .ToArray()
+                    }
+                   
+                })
+                .ToArray();
+
+            var resultObject = new UserProductOutputModel
+            {
+                Count = context.Users.Count(u => u.ProductsSold.Any()),
+                Users = usersProducts
+            };
+            /* var jsonSerializerSettings = new JsonSerializerSettings
+             {
+                 NullValueHandling = NullValueHandling.Ignore
+             };
+
+             var result = JsonConvert.SerializeObject(resultObject, Formatting.Indented, jsonSerializerSettings);
+             return result;*/
+
+            const string root = "Users";
+
+            var result = XmlConverter.Serialize(resultObject, root);
+            return result;
 
         }
+
+       
     }
 }

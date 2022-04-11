@@ -26,6 +26,7 @@ namespace RealEstates.ConsoleApplication
                 Console.WriteLine("3. Average price per square meter");
                 Console.WriteLine("4. Add tag");
                 Console.WriteLine("5. Bulk tag to properties");
+                Console.WriteLine("6. Property Full Info");
                 Console.WriteLine("0. Exit");
 
                 bool parsed = int.TryParse(Console.ReadLine(), out int option);
@@ -34,7 +35,7 @@ namespace RealEstates.ConsoleApplication
                 {
                     break;
                 }
-                if (parsed && option >= 1 && option <= 5)
+                if (parsed && option >= 1 && option <= 6)
                 {
                     switch (option)
                     {
@@ -53,6 +54,9 @@ namespace RealEstates.ConsoleApplication
                         case 5:
                             BulkTagToProperties(db);
                             break;
+                        case 6:
+                            PropertyFullInfo(db);
+                            break;
                     }
                     Console.WriteLine("Press any key to continue...");
                     Console.ReadKey();
@@ -60,10 +64,36 @@ namespace RealEstates.ConsoleApplication
             }
         }
 
+        private static void PropertyFullInfo(ApplicationDbContext db)
+        {
+            Console.WriteLine("Count of properties:");
+            var countOfProperties = int.Parse(Console.ReadLine());
+            IPropertiesService propertiesService = new PropertiesService(db);
+            var result = propertiesService.GetFullData(countOfProperties);
+
+            foreach (var item in result)
+            {
+                Console.WriteLine(item.DistrictName);
+                Console.WriteLine(item.BuildingType);
+                Console.WriteLine(item.Id);
+                Console.WriteLine(item.Price);
+                Console.WriteLine(item.PropertyType);
+                Console.WriteLine(item.Size);
+                Console.WriteLine(item.Year);
+
+                foreach (var tag in item.Tags)
+                {
+                    Console.WriteLine(tag.Name);
+                }
+            }
+        
+        }
+
         private static void BulkTagToProperties(ApplicationDbContext db)
         {
             Console.WriteLine("Bulk operation started!");
-            ITagService tagService = new TagService(db);
+            IPropertiesService propertiesService = new PropertiesService(db);
+            ITagService tagService = new TagService(db, propertiesService);
             tagService.BulkTagToPropertiesRelatoin();
             Console.WriteLine("Bulk operation finished!");
         }
@@ -74,8 +104,8 @@ namespace RealEstates.ConsoleApplication
 
             Console.WriteLine("Importance (optional):");
             bool isParsed = int.TryParse(Console.ReadLine(), out int tagImportance);
-           
-            ITagService tagService = new TagService(db);
+            IPropertiesService propertiesService = new PropertiesService(db);
+            ITagService tagService = new TagService(db, propertiesService);
 
             int? importance = isParsed ? tagImportance : null;
 

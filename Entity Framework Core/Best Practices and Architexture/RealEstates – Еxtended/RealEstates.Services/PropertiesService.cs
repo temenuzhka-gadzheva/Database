@@ -1,4 +1,5 @@
-﻿using RealEstates.Data;
+﻿using AutoMapper.QueryableExtensions;
+using RealEstates.Data;
 using RealEstates.Models;
 using RealEstates.Services.Models;
 using System;
@@ -7,7 +8,7 @@ using System.Linq;
 
 namespace RealEstates.Services
 {
-    public class PropertiesService : IPropertiesService
+    public class PropertiesService : BaseService, IPropertiesService
     {
         private readonly ApplicationDbContext context;
 
@@ -58,7 +59,7 @@ namespace RealEstates.Services
         public decimal AveragePricePerSquareMeter()
         {
             return context.Properties.Where(x => x.Price.HasValue)
-                .Average(x => x.Price / (decimal)x.Size) ?? 0;       
+                .Average(x => x.Price / (decimal)x.Size) ?? 0;
         }
 
         public decimal AveragePricePerSquareMeter(int districtId)
@@ -67,23 +68,50 @@ namespace RealEstates.Services
                 .Average(x => x.Price / (decimal)x.Size) ?? 0;
         }
 
+        public double AverageSize(int districtId)
+        {
+            // average size per every section
+            return context.Properties.Where(x => x.DistrictId == districtId)
+                .Average(x => x.Size);
+        }
 
+        public IEnumerable<PropertyInfoFullData> GetFullData(int count)
+        {
+            var properties = context.Properties
+                .Where(x => x.Floor.HasValue &&
+                            x.Floor.Value > 1 &&
+                            x.Floor.Value <= 8 &&
+                            x.Year.HasValue && x.Year.Value > 2015)
+                .ProjectTo<PropertyInfoFullData>(this.Mapper.ConfigurationProvider)
+                .OrderByDescending(x => x.Price)
+                .ThenBy(x => x.Size)
+                .ThenBy(x => x.Year)
+                .Take(count)
+                .ToList();
+
+            return properties;
+        }
         public IEnumerable<PropertyInfoDto> Search(int minPrice, int maxPrice, int minSize, int maxSize)
         {
             var properties = context.Properties.
-                   Where(x => x.Price >= minPrice && x.Price <= maxPrice && x.Size >= minSize && x.Size <= maxSize)
-                   .Select(x => new PropertyInfoDto 
-                   {
-                       Size = x.Size,
-                       Price = x.Price ?? 0,
-                       BuildingType = x.BuildingType.Name,
-                       DistrictName = x.District.Name,
-                       PropertyType = x.Type.Name
-                   })
-                   .ToList();
-
+                   Where(x => x.Price >= minPrice &&
+                         x.Price <= maxPrice &&
+                         x.Size >= minSize &&
+                         x.Size <= maxSize)
+                  .ProjectTo<PropertyInfoDto>
+                  (this.Mapper.ConfigurationProvider)
+                  .ToList();
 
             return properties;
+            /*
+             .Select(x => new PropertyInfoDto 
+             {
+                 Size = x.Size,
+                 Price = x.Price ?? 0,
+                 BuildingType = x.BuildingType.Name,
+                 DistrictName = x.District.Name,
+                 PropertyType = x.Type.Name
+             })*/
         }
     }
 }

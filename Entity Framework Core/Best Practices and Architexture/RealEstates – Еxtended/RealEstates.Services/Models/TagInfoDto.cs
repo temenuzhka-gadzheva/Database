@@ -1,7 +1,11 @@
-﻿namespace RealEstates.Services.Models
+﻿using System.Xml.Serialization;
+
+namespace RealEstates.Services.Models
 {
-   public class TagInfoDto
+    [XmlType("Tag")]
+    public class TagInfoDto
     {
+        [XmlAttribute("Name")]
         public string Name { get; set; }
     }
 }

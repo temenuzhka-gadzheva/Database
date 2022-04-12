@@ -1,8 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RealEstates.Data;
 using RealEstates.Services;
+using RealEstates.Services.Models;
 using System;
+using System.IO;
+using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace RealEstates.ConsoleApplication
 {
@@ -69,9 +73,16 @@ namespace RealEstates.ConsoleApplication
             Console.WriteLine("Count of properties:");
             var countOfProperties = int.Parse(Console.ReadLine());
             IPropertiesService propertiesService = new PropertiesService(db);
-            var result = propertiesService.GetFullData(countOfProperties);
+            var result = propertiesService.GetFullData(countOfProperties).ToArray();
+            // with serializer
+            var xmlSerializer = new XmlSerializer(typeof(PropertyInfoFullData[]));
+            var stringWriter = new StringWriter();
+            xmlSerializer.Serialize(stringWriter, result);
 
-            foreach (var item in result)
+            Console.WriteLine(stringWriter.ToString().TrimEnd());
+
+            // without serializer
+           /* foreach (var item in result)
             {
                 Console.WriteLine(item.DistrictName);
                 Console.WriteLine(item.BuildingType);
@@ -85,8 +96,8 @@ namespace RealEstates.ConsoleApplication
                 {
                     Console.WriteLine(tag.Name);
                 }
-            }
-        
+            }*/
+
         }
 
         private static void BulkTagToProperties(ApplicationDbContext db)

@@ -1,0 +1,86 @@
+[
+  {
+    "Question": "Which of the following is TRUE?",
+    "Answers": [
+      {
+        "Answer": "All of statements.",
+        "Correct": true
+      },
+      {
+        "Answer": "EF Core supports cross-platform.",
+        "Correct": false
+      },
+      {
+        "Answer": "EF Core is an open sourced framework.",
+        "Correct": false
+      },
+      {
+        "Answer": "EF Core is a light weight and extensible framework.",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": "EF Core can be run on _________.",
+    "Answers": [
+      {
+        "Answer": "All of the technologies.",
+        "Correct": true
+      },
+      {
+        "Answer": ".Net Framework.",
+        "Correct": false
+      },
+      {
+        "Answer": ".Net Core.",
+        "Correct": false
+      },
+      {
+        "Answer": "UWP & Xamarin.",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": "Suggested approach for new EF Core projects is  _________.",
+    "Answers": [
+      {
+        "Answer": "Code-First.",
+        "Correct": true
+      },
+      {
+        "Answer": "Database-First.",
+        "Correct": false
+      },
+      {
+        "Answer": "Model-First",
+        "Correct": false
+      },
+      {
+        "Answer": "User-First.",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": "Which of the following is FALSE?",
+    "Answers": [
+      {
+        "Answer": "EF Core is not an open sourced framework.",
+        "Correct": true
+      },
+      {
+        "Answer": "EF Core supports cross-platform.",
+        "Correct": false
+      },
+      {
+        "Answer": "EF Core is an open sourced framework.",
+        "Correct": false
+      },
+      {
+        "Answer": "EF Core is a light weight and extensible framework.",
+        "Correct": false
+      }
+    ]
+  }
+]

@@ -8,5 +8,6 @@ namespace Quiz.Services.Interfaces
         int Add(string title);
         QuizViewModel GetQuizById(int quizId);
         IEnumerable<UserQuizViewModel> GetQuizzesByUserName(string userName);
+        void StartQuiz(string userName, int quizId);
     }
 }

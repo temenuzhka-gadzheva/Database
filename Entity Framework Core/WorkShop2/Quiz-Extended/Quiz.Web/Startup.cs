@@ -32,6 +32,7 @@ namespace Quiz.Web
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddScoped<IQuizService, QuizService>();
+            services.AddScoped<IUserAnswerService, UserAnswerService>();
             services.AddControllersWithViews();
         }
 

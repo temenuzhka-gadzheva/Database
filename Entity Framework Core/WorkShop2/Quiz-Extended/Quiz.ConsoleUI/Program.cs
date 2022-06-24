@@ -22,7 +22,8 @@ namespace Quiz.ConsoleUI
 
          var jsonImporter = serviceProvider.GetService<IJsonImportService>();
             jsonImporter.Import("Ef-Core-Quiz.json", "EF Core Test");
-           
+            jsonImporter.Import("Castle-for-lovers-Quiz.json", "Castle for lovers Test");
+
 
 
 

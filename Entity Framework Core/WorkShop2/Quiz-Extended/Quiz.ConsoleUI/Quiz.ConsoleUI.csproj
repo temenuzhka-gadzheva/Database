@@ -27,6 +27,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Castle-for-lovers-Quiz.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Ef-Core-Quiz.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

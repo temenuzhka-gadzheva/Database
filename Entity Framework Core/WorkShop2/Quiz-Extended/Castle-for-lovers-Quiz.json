@@ -1,0 +1,233 @@
+[
+  {
+    "Question": "How many episodes Castle has?",
+    "Answers": [
+      {
+        "Answer": "122",
+        "Correct": false
+      },
+      {
+        "Answer": "153",
+        "Correct": false
+      },
+      {
+        "Answer": "98",
+        "Correct": false
+      },
+      {
+        "Answer": "173",
+        "Correct": true
+      }
+    ]
+  },
+  {
+    "Question": "What works Richard Castle?",
+    "Answers": [
+      {
+        "Answer": "famous mystery novelist",
+        "Correct": true
+      },
+      {
+        "Answer": "a cop",
+        "Correct": false
+      },
+      {
+        "Answer": "FBI Agent",
+        "Correct": false
+      },
+      {
+        "Answer": "actor",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": "Who was intrigued by Richard Castle during the interrogation in the New York Police Department?",
+    "Answers": [
+      {
+        "Answer": "Detective Kevin Ryan",
+        "Correct": false
+      },
+      {
+        "Answer": "Medical Examiner Lanie Parish",
+        "Correct": false
+      },
+      {
+        "Answer": "Detective Kate Beckett",
+        "Correct": true
+      },
+      {
+        "Answer": "Detective Javier Esposito",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": "In what seasonRichard Castle and Kate Beckett get together ?",
+    "Answers": [
+      {
+        "Answer": "beginning of the 6-th season",
+        "Correct": true
+      },
+      {
+        "Answer": "the middle of the 3-th season",
+        "Correct": false
+      },
+      {
+        "Answer": "the end of the 1-st season",
+        "Correct": false
+      },
+      {
+        "Answer": "the end of the 4th beginning of the 5th season",
+        "Correct": true
+      }
+    ]
+  },
+  {
+    "Question": "What is the name of the guarantor of Kate's mother's murder?",
+    "Answers": [
+      {
+        "Answer": "Captain Roy Montgomery",
+        "Correct": false
+      },
+      {
+        "Answer": "Senator Bracken",
+        "Correct": true
+      },
+      {
+        "Answer": "Captain Victoria Gate",
+        "Correct": false
+      },
+      {
+        "Answer": " Martha Rodgers",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": "What is the full name of Castle?",
+    "Answers": [
+      {
+        "Answer": "Richard Edgar Aleksandur Rodgers Castle",
+        "Correct": true
+      },
+      {
+        "Answer": "Richard Rodgers Castle",
+        "Correct": false
+      },
+      {
+        "Answer": "Richard Aleksandur Castle",
+        "Correct": false
+      },
+      {
+        "Answer": "Richard Castle",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": "A methodical and meticulous serial killer who returns to New York every few years to terrorize the city. He is frequently believed to be dead, only to return again is _________.",
+    "Answers": [
+      {
+        "Answer": "Jerry Tyson / the Triple Killer (3XK)",
+        "Correct": true
+      },
+      {
+        "Answer": "William Bracken",
+        "Correct": false
+      },
+      {
+        "Answer": "Vulcan Simmons",
+        "Correct": false
+      },
+      {
+        "Answer": "Dr Kelly Nieman",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": "Dr Kelly Nieman, a respected plastic surgeon with a secret life as ___________ partner in crime.",
+    "Answers": [
+      {
+        "Answer": "Agent Rachel McCord",
+        "Correct": false
+      },
+      {
+        "Answer": "Jerry Tyson's",
+        "Correct": true
+      },
+      {
+        "Answer": "Captain Victoria Gate",
+        "Correct": false
+      },
+      {
+        "Answer": "Detective Tom Demming",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": " Mr. Smith, a friend of _____________, who holds evidence that keeps the murderer of Beckett's mother away from her",
+    "Answers": [
+      {
+        "Answer": "William Bracken",
+        "Correct": false
+      },
+      {
+        "Answer": "Captain Montgomery's",
+        "Correct": true
+      },
+      {
+        "Answer": "Captain Victoria Gate",
+        "Correct": false
+      },
+      {
+        "Answer": "Agent Rachel McCord",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": "Agent Rachel McCord, Beckett's partner during her brief time working for the ",
+    "Answers": [
+      {
+        "Answer": "Attorney-General's Office",
+        "Correct": true
+      },
+      {
+        "Answer": "NYPD",
+        "Correct": false
+      },
+      {
+        "Answer": "Castle agency",
+        "Correct": false
+      },
+      {
+        "Answer": "William Bracken",
+        "Correct": false
+      }
+    ]
+  },
+  {
+    "Question": "Jackson Hunt, an operative of the Special Activities Center of the _____, and who is _____ father.",
+    "Answers": [
+      {
+        "Answer": "CIA, Castle's",
+        "Correct": true
+      },
+      {
+        "Answer": "CIA, Beckett`s",
+        "Correct": false
+      },
+      {
+        "Answer": "FBI, Castle's",
+        "Correct": false
+      },
+      {
+        "Answer": "MI6, Beckett`s",
+        "Correct": false
+      }
+    ]
+  }
+]
